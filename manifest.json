@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Text-to-Speech",
+  "description": "Text-to-Speech selected text, making boring text(s) audible",
+  "version": "1.0",
+  "icons": {
+    "16": "/images/text-to-speech_icon.png",
+    "48": "/images/text-to-speech_icon.png",
+    "128": "/images/text-to-speech_icon.png"
+  },
+    "content_scripts": [
+      {
+        "matches" : ["https://www.google.com/*"],
+        "js" : ["index.js"]
+      }
+    ]
+  }
